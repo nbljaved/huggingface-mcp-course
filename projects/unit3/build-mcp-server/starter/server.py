@@ -68,7 +68,7 @@ async def analyze_file_changes(base_branch: str = "main",
                                max_diff_lines: int = 500,
                                working_directory: Optional[str] = None) -> str:
 
-    """Analyze file changes with smart output limiting.
+    """Get the full diff and list of changed files in the current git repository.
     
     Args:
         base_branch: Base branch to compare against (default: main)
