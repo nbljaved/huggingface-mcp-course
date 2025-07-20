@@ -47,7 +47,7 @@ Instead of using rigid rules based on file extensions or patterns, your tools sh
 
 1. Run the unit tests:
    ```bash
-   uv run pytest test_server.py -v
+   uv run pytest test_server.py -v --showlocals
    ```
 
 2. Configure the MCP server in Claude Code:
