@@ -33,8 +33,11 @@ Note: The webhook server (`webhook_server.py`) is provided for you!
    ```
 
 2. In another terminal, start Cloudflare Tunnel:
+   See https://hub.docker.com/r/cloudflare/cloudflared
+   
    ```bash
    cloudflared tunnel --url http://localhost:8080
+   docker run cloudflare/cloudflared:latest tunnel --no-autoupdate --url http://localhost:8080
    ```
 
 3. Configure GitHub webhooks with your tunnel URL
