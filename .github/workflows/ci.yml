@@ -14,6 +14,6 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies and run tests
       run: |
-        cd projects/unit3/github-actions-integration/starter
+        cd projects/unit3/slack-notification/starter
         pip install uv
-        uv run test_server.py
+        uv run test_server.py --verbose --showlocals
